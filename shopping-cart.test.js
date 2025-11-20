@@ -1,7 +1,9 @@
 describe("Shopping Cart Tests", () => {
+  // This assignment runs ONCE when Jest loads the file, not before each test
   global.cart = [];
 
   beforeEach(() => {
+    // This reset runs before EACH test
     global.cart = [];
 
     // Mock localStorage
